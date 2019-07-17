@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Psychic Game</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+    <script>
+    
+       
+        
+   
+   
+    <h1><strong>The Psychic Game</strong></h1>
+ 
+   
+     var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k",
+  "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y",
+  "z"];
+
+    var wins = 0;
+    var losses = 0;
+    var guessesNum = [10];
+    var guessChoice = [];
+    var winsText = document.getElementById("wins-text");
+    var lossesText = document.getElementById("losses-text");
+    var guessesLeftText = document.getElementById("Guesses-left-text");
+    var guessesSoFarText = document.getElementById("Guesses-so-far-text");
+    var computerChoice = alphabet[Math.floor(Math.random() *
+  alphabet.length)];
+    console.log(computerChoice)
+
+    document.onkeypress = function(event) {
+    var userGuess = event.key;
+
+ 
+
+    <div>
+        <h2> What letter am I thinking of?</h2>
+    </div> 
+
+
+    <div>
+        <h3>Wins:</h3>
+        <div id="wins-text"></div>
+
+    </div> 
+
+
+
+
+    <div>
+        <h3>Losses</h3>
+        <div id="losses-text"></div>
+
+    </div> 
+
+
+
+
+    <div>
+        <h3>Guesses Remaining</h3>
+        <div id="Guesses-left-text"></div>
+    </div> 
+
+
+
+
+    <div>
+        <h3>Guesses So Far</h3>
+        <div id="guessesSoFarText"></div>
+        
+    </div> 
+
+    </script> 
+
+</body>
+
+</html>
